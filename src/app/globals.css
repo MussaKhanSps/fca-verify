@@ -2,10 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
+.remove-arrow::-webkit-inner-spin-button,
+.remove-arrow::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.rdp-dropdown_year > div,
+.rdp-dropdown_year > span,
+.rdp-dropdown_month > div,
+.rdp-dropdown_month > span,
+.rdp-vhidden > div {
+    display: none;
+}
+
+.rdp-caption_dropdowns {
+    display: flex;
+    font-size: 15px;
 }
