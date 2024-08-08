@@ -2,10 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.remove-arrow::-webkit-inner-spin-button,
-.remove-arrow::-webkit-outer-spin-button {
+.remove-arrow[type="number"]::-webkit-outer-spin-button,
+.remove-arrow[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.remove-arrow[type="number"]::-moz-outer-spin-button,
+.remove-arrow[type="number"]::-moz-inner-spin-button {
+    -moz-appearance: none;
+    margin: 0;
+}
+
+.remove-arrow[type="number"] {
+    appearance: textfield;
 }
 
 .rdp-dropdown_year > div,
