@@ -2,12 +2,8 @@
 
 // LIB IMPORTS
 import { useState } from "react";
-import Link from "next/link";
 
 // UI IMPORTS
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import LoginWithEmail from "@/components/forms/login/loginWithEmail";
 import LoginWithPassword from "@/components/forms/login/loginWithPassword";
 
